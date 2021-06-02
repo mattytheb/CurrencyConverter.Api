@@ -1,0 +1,7 @@
+{
+  "ConnectionStrings": {
+    "CurrencyContextDb": "Data Source=OFFICE-PC\\SQLEXPRESS;Initial Catalog=CurencyDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets = true;"
+  }
+
+
+}

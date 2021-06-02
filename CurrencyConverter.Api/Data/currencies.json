@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Pound Sterling",
+    "CurrencyCode": "GBP",
+    "Symbol": "£" 
+  },
+  {
+    "Name": "US Dollar",
+    "CurrencyCode": "USD",
+    "Symbol": "$"
+  },
+  {
+    "Name": "Japanese Yen",
+    "CurrencyCode": "JPY",
+    "Symbol": "¥"
+  },
+  {
+    "Name": "Singapore Dollar",
+    "CurrencyCode": "SGD",
+    "Symbol": "S$"
+  },
+  {
+    "Name": "Australian Dollar",
+    "CurrencyCode": "AUD",
+    "Symbol": "A$"
+  },
+  {
+    "Name": "Swiss Franc",
+    "CurrencyCode": "CHF",
+    "Symbol": "CHf"
+  },
+  {
+    "Name": "Euro",
+    "CurrencyCode": "EUR",
+    "Symbol": "€"
+  },
+  {
+    "Name": "Canadian Dollar",
+    "CurrencyCode": "CAD",
+    "Symbol": "CAN$"
+  },
+  {
+    "Name": "Indian Rupee",
+    "CurrencyCode": "INR",
+    "Symbol": "?"
+  },
+  {
+    "Name": "Taiwan Dollar",
+    "CurrencyCode": "TWD",
+    "Symbol":  "NT$" 
+  }
+]

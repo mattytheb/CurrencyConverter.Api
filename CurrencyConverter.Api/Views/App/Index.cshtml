@@ -1,0 +1,40 @@
+﻿@model ConversionViewModel
+@section Scripts{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+<div><b>List Of Currency Codes</b><br /></div>
+<table class="table table-bordered table-condensed table-striped table-hover sortable">
+    <tr>
+        <th>Currency </th>
+        <th>Currency Code</th>
+    </tr>
+    @foreach (var item in Model.Currencies)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.CurrencyCode</td>
+        </tr>
+
+    }
+</table>
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <label asp-for="CurrencyCodeFrom">Currency Code From:</label>
+    <br />
+    <input asp-for="CurrencyCodeFrom" />
+    <span asp-validation-for="CurrencyCodeFrom"></span>
+    <br />
+    <label asp-for="CurrencyCodeTo">Currency Code To:</label>
+    <br />
+    <input asp-for="CurrencyCodeTo" />
+    <span asp-validation-for="CurrencyCodeTo"></span>
+    <br />
+    <label asp-for="AmountToConvert">Amount to Convert:</label>
+    <br />
+    <input asp-for="AmountToConvert" />
+    <span asp-validation-for="AmountToConvert"></span>
+    <br />
+    <input type="submit" value="Convert" />
+</form>

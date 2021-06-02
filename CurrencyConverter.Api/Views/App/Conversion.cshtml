@@ -1,0 +1,21 @@
+﻿@using System.Globalization
+
+@{
+
+    var conversion = ViewData.Model;
+}
+<h2>Currency Converted</h2>
+<br/>
+<h3>From: @conversion.CurrencyNameFrom</h3>
+<h3> To: @conversion.CurrencyNameTo</h3>
+<br/>
+<h3>Amount to convert @conversion.CurrencyCodeFrom.ToUpper() @conversion.AmountToConvert.ToString("N", new CultureInfo("en-US"))</h3>
+<br/>
+<h3>Equals @conversion.CurrencyCodeTo.ToUpper() @conversion.ConvertedAmount.ToString("N",new CultureInfo("en-US"))</h3>
+<br/>
+
+<form method="POST">
+    <input type="submit" name="ConvertAnother" value="Convert Another" />
+</form>
+
+
